@@ -72,7 +72,6 @@ namespace ProductWeb.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.CategoryID = new SelectList(_dbCategories.GetCategories(), "CategoryID", "CategoryName", productVM.CategoryID);
             return View(productVM);
         }
 
